@@ -1,0 +1,105 @@
+<div *ngIf="!loggedIn" class="Sample-images">
+    <h2> Welcome To My Application</h2>
+    <p>Please log in to view the exclusive content</p>
+    <div class="images">
+        <img src="assets/sample1.jpg" alt="sample1 image">
+        <img src="assets/sample2.jpg" alt="sample2 image">
+        <img src="assets/sample3.jpg" alt="sample3 image">
+        <img src="assets/sample4.jpg" alt="sample4 image">
+        <img src="assets/sample5.jpg" alt="sample5 image">
+        <img src="assets/sample6.jpg" alt="sample6 image">
+        <img src="assets/sample7.jpg" alt="sample7 image">
+        <img src="assets/sample8.jpg" alt="sample8 image">
+        <img src="assets/sample9.jpg" alt="sample9 image">
+        <img src="assets/sample10.jpg" alt="sample10 image">
+        <img src="assets/sample11.jpg" alt="sample11 image">
+        <img src="assets/image1.jpg" alt="image1">
+        <img src="assets/image2.jpg" alt="image2">
+        <img src="assets/image3.jpg" alt="image3">
+        <img src="assets/image4.jpg" alt="image4">
+        <img src="assets/image5.jpg" alt="image5">
+        <img src="assets/image6.jpg" alt="image6">
+
+
+
+
+    </div>
+</div>
+
+
+<div *ngIf="!loggedIn" class="login-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input
+                type="name"
+                id="name"
+                [(ngModel)]="name"
+                name="name"
+                required
+            />
+                
+    </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                [(ngModel)]="email"
+                name="email"
+                required
+            />
+        </div>
+       
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                [(ngModel)]="password"
+                name="password"
+                required
+            />
+        </div>
+        <div *ngIf="errorMessage" class="error-message">
+        {{errorMessage}}
+        </div>
+        <button type="submit">Login</button>
+
+</form>
+</div>
+<div class="image-gallery" *ngIf="loggedIn">
+    <h2> WELCOME : {{name}} </h2>
+    <div class="images">
+        <img src="assets/image1.jpg" alt="image1">
+        <img src="assets/image2.jpg" alt="image2">
+        <img src="assets/image3.jpg" alt="image3">
+        <img src="assets/image4.jpg" alt="image4">
+        <img src="assets/image5.jpg" alt="image5">
+        <img src="assets/image6.jpg" alt="image6">
+        <img src="assets/sample1.jpg" alt="sample1 image">
+        <img src="assets/sample2.jpg" alt="sample2 image">
+        <img src="assets/sample3.jpg" alt="sample3 image">
+        <img src="assets/sample4.jpg" alt="sample4 image">
+        <img src="assets/sample5.jpg" alt="sample5 image">
+        <img src="assets/sample6.jpg" alt="sample6 image">
+        <img src="assets/sample7.jpg" alt="sample7 image">
+        <img src="assets/sample8.jpg" alt="sample8 image">
+        <img src="assets/sample9.jpg" alt="sample9 image">
+        <img src="assets/sample10.jpg" alt="sample10 image">
+        <img src="assets/sample11.jpg" alt="sample11 image">
+        <img src="assets/images7.jpg" alt="image7">
+        <img src="assets/image8.jpg" alt="image8">
+        <img src="assets/image9.jpg" alt="image9">
+        <img src="assets/image10.jpg" alt="image10">
+        <img src="assets/image11.jpg" alt="image11">
+        <img src="assets/image12.jpg" alt="image12">
+        <img src="assets/image13.jpg" alt="image13">
+        <img src="assets/image14.jpg" alt="image14">
+        <img src="assets/image15.jpg" alt="image15">
+        <img src="assets/image16.jpg" alt="image16">
+        <img src="assets/image17.jpg" alt="image17">
+        
+    </div>
+</div>

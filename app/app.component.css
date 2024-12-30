@@ -1,0 +1,15 @@
+h1{
+    color:rgb(24, 147, 218);
+}
+.demoimage{
+    width: 300px;
+    height: 200px;
+    
+    margin-right: 30px;
+    border: 2px solid #e90d0d;
+}
+.demoimage1{
+    width: 300px;
+    height: 200px;
+    border: 2px solid #0825e1;
+}   
